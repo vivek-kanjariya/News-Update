@@ -11,3 +11,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App{
+  background-color:white;
+  width: 100%;
+}
+.link2{
+  display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin-top:2vh ;
+}
+.card{
+  border: 3px solid black;
+  display: flex;
+  margin: 20px 50px;
+  padding: 20px;
+  flex-direction: column;
+  width: 40vw;
+}
+.card-img{
+  height: 30vh;
+  /* width: 40vw; */
+}
+.card-title{
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: black;
+}
+.card-p{
+font-size: 1rem;
+color: rgb(0, 0, 0);
+font-weight: 200;
+}
+.btn{
+  height: 4vh;
+  background-color: blue;
+  display: inline-block;
+  width: fit-content;
+  cursor: default;
+  width: 10vw;
+}
+.card-btn{
+  width: 100%;
+  background-color: blueviolet;
+  text-align: center;
+}
+@media (max-width:480px) {
+  .card{
+    width: 100vw;
+    margin: 0px 10px;
+    border: none;
+  }
+  .btn{
+width: 100%;
+height: 100%;
+text-align: center;
+  }
+  .card-btn{
+width: 40vw;
+text-align: center;
+height: 7vh;
+justify-content: center;
+align-items: center;
+  }
+}

@@ -1,0 +1,101 @@
+.p {
+  background-color: rgb(221, 246, 246);
+}
+.logo {
+  margin: 1rem 2rem;
+  font-weight: 800;
+  font-size: 40px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aqua;
+  position: static;
+  top: 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+}
+.li {
+  display: block;
+  padding: 10px;
+  margin: 10px 10px 10px;
+  background-color: black;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: white;
+  list-style: none;
+}
+.active {
+  background-color: beige;
+}
+.li:not(.active):hover {
+  background-color: blue;
+}
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.75rem;
+  height: 2rem;
+  display: flex;
+}
+nav .menu span {
+  display: none;
+  height: 0.4rem;
+  width: 100%;
+  background-color: aliceblue;
+  border-radius: 0.2rem;
+}
+
+
+.card-btn{
+  background-color: white;
+  border: none;
+}
+.btn{
+  /* display: none; */
+  background-color: rgb(255, 255, 255);
+  color: white;
+  font-weight: 800;
+  /* font-size: 30px; */
+}
+.btn a{
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  nav .menu span {
+    margin-top: 1px;
+    display: flex;
+  }
+  #disnav {
+    flex-direction: column;
+  }
+  .open {
+    display: none;
+  }
+  .li {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 50vw;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .active {
+    border-radius: 30px;
+  }
+  .menu {
+    margin-top: 20px;
+    display: flex;
+  }
+}
